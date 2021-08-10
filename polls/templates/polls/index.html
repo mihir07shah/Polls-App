@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls App</title>
+    <link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" id="home">
+    <h1>POLLS APP</h1>
+    <h6>List of Questions: </h6>
+    <img class="backgroundImg" src="{% static 'polls/images/istockphoto.jpg' %}" alt="background-image">
+    {% if questions %}
+        <ol class="list">
+            {% for q in questions %}
+                <li><a href="{% url 'polls-details' q.id %}">{{ q.question_text }}</a></li>                
+                <br>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <p>No Questions Available</p>
+    {% endif %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+</body>
+</html>

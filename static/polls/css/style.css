@@ -1,0 +1,56 @@
+p{
+    color: rgb(0, 0, 0);
+}
+
+li a {
+    color:rgb(0, 0, 0);
+}   
+
+.container h1{
+    color:rgb(0, 0, 0);
+}
+
+.backgroundImg{
+    width: 700px !important;
+    height: 622px !important;
+    margin-top: -82px !important;
+    margin-right: -120px !important;
+    float: right;
+}
+
+/* body 
+{
+    background-image: url("/static/polls/images/istockphoto.jpg");
+    background-size: cover;
+}
+     .container{
+    background-image: url("/static/polls/images/istockphoto.jpg") no-repeat center/cover !important;
+    height: 200px;
+    width: 200px;
+    z-index: -1;
+}
+
+{% load staticfiles %}
+body {
+    background: url("/static/images/background.jpeg") no-repeat;
+}
+.bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.detail
+{
+    background-image: url("/static/polls/images/vote.jpg");
+    background-size: cover;
+}
+
+.results
+{
+    background-image: url("/static/polls/images/result-img.jpg");
+    background-size: cover;
+}
+
+*/ 
